@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Check the console</h1>
+    <script src="../dist/gsheetreader.min.js"></script>
+    <script>
+      const id = '1MK7XKswxHrI1S7EWJexlb2ZEB6-s-w8sqErvnayhRGE';
+      const gsr = new GSheetReader(id);
+      gsr.getJSON().then(console.log);
+    </script>
+  </body>
+</html>
