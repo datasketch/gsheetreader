@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddaza/gsheetreader.git"
+    "url": "git+https://github.com/datasketch/gsheetreader.git"
   },
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ddaza/gsheetreader/issues"
+    "url": "https://github.com/datasketch/gsheetreader/issues"
   },
-  "homepage": "https://github.com/ddaza/gsheetreader#readme",
+  "homepage": "https://github.com/datasketch/gsheetreader#readme",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
