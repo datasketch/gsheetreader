@@ -3,7 +3,7 @@
 Transform a public Google Spreadsheet to JSON
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/datasketch/gsheetreader/dist/gsheetreader.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/datasketch/gsheetreader@2/dist/gsheetreader.min.js"></script>
 ```
 
 ## Usage
