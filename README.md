@@ -10,8 +10,8 @@ Transform a public Google Spreadsheet to JSON
 
 ```js
 const id = 'some-google-sheet-public-id';
-const gsr = new GSheetReader(id);
-gsr.getJSON().then(console.log);
+const gsr = new GSheetReader();
+gsr.getJSON(id).then(console.log);
 ```
 
 ## Roadmap

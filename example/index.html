@@ -10,8 +10,8 @@
     <script src="../dist/gsheetreader.min.js"></script>
     <script>
       const id = '1MK7XKswxHrI1S7EWJexlb2ZEB6-s-w8sqErvnayhRGE';
-      const gsr = new GSheetReader(id);
-      gsr.getJSON().then(console.log);
+      const gsr = new GSheetReader();
+      gsr.getJSON(id).then(console.log);
     </script>
   </body>
 </html>
