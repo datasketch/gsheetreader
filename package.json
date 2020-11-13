@@ -1,5 +1,5 @@
 {
-  "name": "gsheetreader",
+  "name": "@ddazal/gsheetreader",
   "version": "2.0.0",
   "description": "From Google Sheets to JSON",
   "main": "dist/gsheetreader.min.js",
@@ -14,7 +14,8 @@
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/datasketch/gsheetreader/issues"
+    "url": "https://github.com/datasketch/gsheetreader/issues",
+    "email": "03dazal@gmail.com"
   },
   "homepage": "https://github.com/datasketch/gsheetreader#readme",
   "devDependencies": {
