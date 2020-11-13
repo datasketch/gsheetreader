@@ -3,7 +3,7 @@
 Transform a public Google Spreadsheet to JSON
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/datasketch/gsheetreader@2/dist/gsheetreader.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/datasketch/gsheetreader@2/dist/gsheetreader.umd.js"></script>
 ```
 
 ## Usage
@@ -16,5 +16,5 @@ gsr.getJSON(id).then(console.log);
 
 ## Roadmap
 
-- [ ] Publish to npm registry
+- [x] Publish to npm registry
 - [ ] Read multiples sheets within the same spreadsheet

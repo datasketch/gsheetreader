@@ -1,3 +1,5 @@
+'use strict';
+
 async function makeQuery(endpoint) {
   try {
     const response = await fetch(endpoint);
@@ -8,4 +10,4 @@ async function makeQuery(endpoint) {
   }
 }
 
-export { makeQuery }
+export { makeQuery };

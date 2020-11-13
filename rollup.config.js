@@ -1,22 +1,22 @@
 import { terser } from 'rollup-plugin-terser';
+import pkg from './package.json';
 
-const pkg = require('./package.json');
-
-export default {
-  input: 'src/main.js',
-  output: [
-    {
-      file: pkg.main,
-      format: 'iife',
+export default [
+  {
+    input: 'src/main.js',
+    output: {
       name: 'GSheetReader',
-      sourcemap: true,
+      file: pkg.browser,
+      format: 'umd',
     },
-    {
-      file: pkg.module,
-      format: 'es',
-      name: 'GSheetReader',
-      sourcemap: true,
-    },
-  ],
-  plugins: [terser()],
-};
+    plugins: [terser()],
+  },
+  {
+    input: 'src/main.js',
+    output: [
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
+    ],
+    plugins: [terser()],
+  },
+];

@@ -1,6 +1,8 @@
+'use strict';
+
 import { makeQuery } from './utils';
 
-export default class GSheetReader {
+class GSheetReader {
   getTable(entries) {
     const table = [];
     const cols = Math.max(...entries.map((entry) => +entry.gs$cell.col));
@@ -54,3 +56,5 @@ export default class GSheetReader {
     }
   }
 }
+
+export default GSheetReader;
