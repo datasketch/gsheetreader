@@ -1,10 +1,11 @@
 {
   "name": "gsheetreader",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "From Google Sheets to JSON",
-  "main": "./dist/gsheetreader.min.js",
+  "main": "dist/gsheetreader.min.js",
+  "module": "dist/gsheetreader.min.mjs",
   "scripts": {
-    "build": "rollup --config"
+    "build": "NODE_ENV=production rollup --config"
   },
   "repository": {
     "type": "git",
