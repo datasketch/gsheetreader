@@ -30,11 +30,13 @@ class GSheetReader {
     return { table, size: { cols, rows } };
   }
 
-  async getJSON(id) {
-    const endpoint =
-      'https://spreadsheets.google.com/feeds/cells/' +
-      id +
-      '/1/public/values?alt=json';
+  async getJSON(id, sheetNumber = 1) {
+    if (!id) {
+      throw new Error('id parameter is missing');
+    }
+
+    const endpoint = `https://spreadsheets.google.com/feeds/cells/${id}/${sheetNumber}/public/values?alt=json`;
+
     try {
       const entries = await makeQuery(endpoint);
       const { table, size } = this.getTable(entries);
