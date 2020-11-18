@@ -1,6 +1,6 @@
 {
   "name": "@ddazal/gsheetreader",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "From Google Sheets to JSON",
   "main": "dist/gsheetreader.cjs.js",
   "module": "dist/gsheetreader.esm.js",
