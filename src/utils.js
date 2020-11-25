@@ -1,5 +1,7 @@
 'use strict';
 
+require('isomorphic-fetch');
+
 async function makeQuery(endpoint) {
   try {
     const response = await fetch(endpoint);
@@ -10,4 +12,4 @@ async function makeQuery(endpoint) {
   }
 }
 
-export { makeQuery };
+module.exports = { makeQuery };

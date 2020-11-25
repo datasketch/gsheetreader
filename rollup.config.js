@@ -1,5 +1,8 @@
-import { terser } from 'rollup-plugin-terser';
+import commonjs from '@rollup/plugin-commonjs';
+import nodePolyfills from 'rollup-plugin-node-polyfills';
 import pkg from './package.json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 
 export default [
   {
@@ -9,7 +12,7 @@ export default [
       file: pkg.browser,
       format: 'umd',
     },
-    plugins: [terser()],
+    plugins: [nodeResolve({ browser: true }), commonjs(), terser()],
   },
   {
     input: 'src/main.js',
@@ -17,6 +20,6 @@ export default [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },
     ],
-    plugins: [terser()],
+    plugins: [nodePolyfills(), nodeResolve(), commonjs(), terser()],
   },
 ];
