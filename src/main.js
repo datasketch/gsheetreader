@@ -16,7 +16,8 @@ class GSheetReader {
     for (const entry of entries) {
       const row = +entry.gs$cell.row;
       const col = +entry.gs$cell.col;
-      table[row - 1][col - 1] = +entry.gs$cell.numericValue || entry.gs$cell.$t;
+      table[row - 1][col - 1] =
+        +entry.gs$cell.numericValue || entry.gs$cell.$t.trim();
     }
 
     for (let row = 0; row < rows; row++) {
