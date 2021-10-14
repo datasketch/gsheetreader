@@ -2,6 +2,8 @@
 
 Transform a public Google Spreadsheet to JSON
 
+> Do not use: The Sheets v3 API has been turned down making this library obsolete.
+
 ## Install
 
 From npm:
